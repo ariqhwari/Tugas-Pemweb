@@ -1,0 +1,187 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 20px;
+}
+span {
+  color: rgb(207, 145, 145);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+.navbar h2,
+span {
+  font-size: 30px;
+}
+.navbar span {
+  color: rgb(133, 16, 211);
+}
+
+/* Background */
+.bg {
+  background: url("image/free2.jpg") no-repeat center;
+  display: flex;
+  background-size: cover;
+  min-height: 100vh;
+  align-items: center;
+  background-attachment: fixed;
+}
+.bg .kotak {
+  position: absolute;
+  align-items: center;
+  height: 100px;
+  right: 0;
+  left: 0;
+  background-image: linear-gradient(
+    rgb(0, 0, 0, 0.003),
+    rgba(255, 255, 255, 1)
+  );
+  margin-top: 727px;
+}
+.bg .content {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: 3px solid #f1f1f1;
+  width: 70%;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+.bg .content h1,
+h3 {
+  font-size: 30px;
+}
+.bg .content span {
+  font-size: 40px;
+}
+.bg .content h5 {
+  padding-top: 20px;
+}
+.bg .content a {
+  color: white;
+  font-size: 10px;
+}
+.bg .content a:hover {
+  color: rgb(207, 145, 145);
+}
+/* About */
+.about {
+  min-height: 760px;
+}
+.about .tittle h3 {
+  margin-top: 70px;
+  font-size: 45px;
+}
+.about .tittle h3,
+h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+.about .content-about {
+  display: flex;
+  align-items: center;
+  padding: 1.4rem 7%;
+}
+.about .content-about .left {
+  width: 45%;
+  justify-content: center;
+  display: flex;
+}
+.about .content-about .left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.about .content-about .right {
+  width: 55%;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.about .content-about .right p {
+  text-align: center;
+  max-width: 530px;
+  display: flex;
+  font-size: 25px;
+}
+.about .content-about .right h4 {
+  text-align: center;
+  max-width: 510px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer-about .footer-text {
+  margin-top: 30px;
+}
+.footer-about .footer-sm {
+  text-align: center;
+}
+.footer-about .footer-sm a,
+i {
+  color: black;
+  margin: 0 5px;
+}
+.footer-about .footer-sm a:hover,
+i:hover {
+  color: rgb(207, 145, 145);
+  margin: 0 5px;
+}
+
+/* Media Queries */
+@media (max-width: 990px) {
+}
+/* Mobile Phone */
+@media (max-width: 550px) {
+  * {
+    font-size: 75%;
+  }
+  .bg .kotak {
+    margin-top: 690px;
+  }
+  .about .tittle h3 {
+    font-size: 30px;
+  }
+  .about .tittle h4 {
+    font-size: 20px;
+  }
+  .about .content-about {
+    display: block;
+    justify-content: center;
+  }
+  .about .content-about .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .about .content-about .left img {
+    height: 250px;
+    width: 250px;
+  }
+  .about .content-about .right p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    max-width: 530px;
+  }
+  .about .content-about .right h4 {
+    font-size: 25px;
+  }
+  .about .content-about .right p {
+    font-size: 10px;
+  }
+  .footer-about .footer-text h4 {
+    font-size: 20px;
+  }
+}
