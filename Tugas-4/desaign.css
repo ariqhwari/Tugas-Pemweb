@@ -1,0 +1,15 @@
+* {
+    text-align: center;
+    font-family: 'poppins';
+    background-color: black;
+    color: white;
+}
+.database table tr th{
+    font-family: 'poppins';
+
+}
+
+.database table{
+    display:inline-table;
+    width: 90%;
+}
