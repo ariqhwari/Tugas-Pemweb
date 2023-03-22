@@ -32,8 +32,18 @@ require 'variabel-array.php';
         <div class="kotak"></div>
         <div class="content">
             <h3>Holaa...</h3>
-            <h1>I'm <span><?php echo $name[0]," ", $name[1]," ", $name[2]," ", $name[3] ?></span></h1>
-            <h3>And I'm a <span class="job"><?php echo $job["job1"],", ", $job["job2"],", ", $job["job3"] ?></span></h3>
+            <h1>I'm 
+                <!-- Looping -->
+                <?php foreach ($name as $info) :?>
+                    <span><?php echo $info;?></span>
+                <?php endforeach; ?>
+            </h1>
+            <h3>And I'm a 
+                <!-- Looping -->
+                <?php foreach ($job as $jobs) :?>
+                    <span class="job"><?php echo $jobs; ?></span>
+                <?php endforeach; ?>
+            </h3>
             <a href="#about">
                 <h5>About me</h5>   
             </a>
