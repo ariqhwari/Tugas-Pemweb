@@ -1,11 +1,7 @@
 <?php
 // Class Bg
 $name = array("Muhammad", "Ariq", "Hawari", "Adiputra");
-$job = array(
-        "job1" => "Student",
-        "job2" => "Developer",
-        "job3" => "Desaigner"
-    );
+$job = array("Student","Developer","Desaigner");
 // Class About
 $about = array(
     "name" => "Muhammad Ariq Hawari Adiputra",
