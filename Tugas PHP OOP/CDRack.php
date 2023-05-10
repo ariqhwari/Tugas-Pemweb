@@ -35,7 +35,7 @@ class CDRack extends Product
 
     public function getPrice()
     {
-        return $this->price + ($this->price * 0.15);
+        return $this->price - ($this->price * 0.15);
     }
 
     public function FinalPrice()
