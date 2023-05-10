@@ -34,12 +34,12 @@ class CDMusic extends Product
 
     public function getPrice()
     {
-        return $this->price + ($this->price * 0.1);
+        return $this->price - ($this->price * 0.1);
     }
 
     public function getDiscount()
     {
-        return $this->discount + 0.05;
+        return $this->discount = 0.05;
     }
 
     public function FinalPrice()
